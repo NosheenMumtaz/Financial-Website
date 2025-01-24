@@ -1,0 +1,116 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #f5f5dc; /* Beige Text */
+    background-color: #1c1f26; /* Dark Blue Background */
+}
+
+/* Header */
+header {
+    background-color: #243447; /* Darker Blue */
+    color: #f5f5dc; /* Beige Text */
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Navigation */
+nav {
+    background-color: #1e2835; /* Dark Blue */
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: #f5f5dc; /* Beige */
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #d8b686; /* Light Beige */
+}
+
+/* Main Sections */
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+main h2 {
+    color: #d8b686; /* Light Beige */
+    margin-bottom: 1rem;
+}
+
+main p, label {
+    color: #f5f5dc; /* Beige */
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+form {
+    margin: 1rem auto;
+    max-width: 400px;
+    text-align: left;
+    background-color: #243447; /* Darker Blue */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 1rem;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: 1px solid #444b58; /* Subtle Border */
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #1e2835; /* Dark Blue */
+    color: #f5f5dc; /* Beige */
+}
+
+form button {
+    background-color: #375a7f; /* Blue Button */
+    color: #f5f5dc; /* Beige Text */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2b4461; /* Darker Blue */
+}
+
+/* Footer */
+footer {
+    background-color: #1e2835; /* Dark Blue */
+    color: #f5f5dc; /* Beige */
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
