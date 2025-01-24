@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Personal Finance Management Platform</h1>
+    </header>
+    <nav>
+        <a href="#home" id="home-link">Home</a>
+        <a href="#dashboard" id="dashboard-link">Dashboard</a>
+        <a href="#budget" id="budget-link">Budgets</a>
+        <a href="#transactions" id="transactions-link">Transactions</a>
+        <a href="#login" id="login-link">Login</a>
+        <a href="#signup" id="signup-link">Signup</a>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Welcome to Your Personal Finance Manager</h2>
+            <p>Take control of your finances with our simple, powerful tools.</p>
+        </section>
+
+        <section id="dashboard" style="display:none;">
+            <h2>Dashboard</h2>
+            <canvas id="expenseChart"></canvas>
+        </section>
+
+        <section id="budget" style="display:none;">
+            <h2>Manage Your Budgets</h2>
+            <form>
+                <label for="category">Category:</label>
+                <input type="text" id="category" name="category">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount">
+                <button type="button">Save Budget</button>
+            </form>
+        </section>
+
+        <section id="transactions" style="display:none;">
+            <h2>Transactions</h2>
+            <form>
+                <label for="transaction-category">Category:</label>
+                <input type="text" id="transaction-category" name="transaction-category">
+                <label for="transaction-amount">Amount:</label>
+                <input type="number" id="transaction-amount" name="transaction-amount">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description"></textarea>
+                <button type="button">Save Transaction</button>
+            </form>
+        </section>
+
+        <section id="login" style="display:none;">
+            <h2>Login</h2>
+            <form>
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" name="email">
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="password">
+                <button type="button">Login</button>
+            </form>
+        </section>
+
+        <section id="signup" style="display:none;">
+            <h2>Sign Up</h2>
+            <form>
+                <label for="signup-name">Name:</label>
+                <input type="text" id="signup-name" name="name">
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" name="email">
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="password">
+                <button type="button">Sign Up</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Personal Finance Management Platform</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
